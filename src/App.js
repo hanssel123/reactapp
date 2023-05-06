@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Parrafo from './components/Parrafo';
+import './styles/Parrafo.css';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         >
           Learn React
         </a>
+        <Parrafo text="My first text" style="negrita"></Parrafo>
+        <Parrafo text="My first white" style="red"></Parrafo>
       </header>
     </div>
   );
