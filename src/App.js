@@ -41,7 +41,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Inventory from './components/Inventory';
-import AddItem from './components/AddItem';
 
 const App = () => {
   return (
@@ -50,7 +49,6 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/inventory" element={<Inventory />} />
-        <Route path="/add-item" element={<AddItem />} />
       </Routes>
     </Router>
   );

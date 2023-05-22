@@ -44,13 +44,13 @@ const Inventory = () => {
 
   return (
     <div className="container">
-      <h2>Inventory</h2>
-      <button onClick={() => addItem('New Item')}>Add Item</button>
+      <h2>Inventario</h2>
+      <button onClick={() => addItem('Nuevo Item')}>Añadir Item</button>
       <table>
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Actions</th>
+            <th>Nombre</th>
+            <th>Acciones</th>
           </tr>
         </thead>
         <tbody>
