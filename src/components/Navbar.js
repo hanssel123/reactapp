@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+  let navigate = useNavigate();
   return (
     <nav>
       <ul>
@@ -9,7 +10,10 @@ const Navbar = () => {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/Inventario">Inventory</Link>
+          <Link to="/inventory">Inventario</Link>
+        </li> 
+        <li>
+          <button onClick={() => navigate('/contaduria')}>Contaduria</button>
         </li>
       </ul>
     </nav>

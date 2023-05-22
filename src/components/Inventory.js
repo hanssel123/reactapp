@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { MdDelete, MdEdit } from 'react-icons/md';
+import useCustomHook from '../hooks/useCustomHook';
 
 const Inventory = () => {
   const [items, setItems] = useState([]);
@@ -42,12 +43,15 @@ const Inventory = () => {
     setEditedItemName('');
   };
 
+  const totalValue = useCustomHook(items);
+
   return (
     <div className="container">
       <h2>Inventario</h2>
-      <button onClick={() => addItem('Nuevo Item')}>Añadir Item</button>
+      <button onClick={() => addItem('New item')}>Añadir Item</button>
       <table>
         <thead>
+          <tr> Total items: {totalValue}</tr>
           <tr>
             <th>Nombre</th>
             <th>Acciones</th>

@@ -18,7 +18,8 @@ const useCustomHook = (initialValue) => {
     setValue(newValue);
   };
 
-  return [value, updateValue];
+  // return [value, updateValue];
+  return initialValue.length;
 };
 
 export default useCustomHook;
